@@ -1,0 +1,209 @@
+html, body, div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline; /* property sets vertical alignment of an inline, inline-block or table-cell box. */
+    background: transparent;
+    
+}
+
+/* Header Section */
+header{
+    position: relative;
+    height: 960px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    /* background-image: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); */
+    background-image: url("https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-wrap{
+    font: 12px 'opensans-bold', sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    z-index: 100;
+    color: #fff;
+    position: relative;
+    padding: 0px 300px;
+    right: 0px;
+    top: 0;
+}
+
+ul.navbar li{
+    padding: 8px 15px;
+    line-height: 32px;
+    text-decoration: none !important;
+    list-style: none;
+    text-align: center;
+}
+
+#nav-icon{
+    margin-bottom: 6px;
+}
+
+
+.header-icon{
+    position: relative;
+    list-style: none; /* removes the dot for the list style */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.header-icon:hover{
+    transform: rotate(45deg);
+    color: black;
+}
+.github:hover{
+    transform: rotate(-45deg);
+    color: black;
+}
+
+header .home-banner{
+    vertical-align: middle;
+    margin: 200px auto 12px auto;
+    width: 27%;
+    text-align: center;
+    color: #29343A; 
+    font-family: 'Actor', sans-serif;
+}
+
+header .banner-text{
+    width: 90%;
+}
+
+header .banner-text h1 {
+    font-weight: 500;
+    line-height: 1;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 80px;
+}
+
+ul.Social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+/* About Section */
+
+#about{
+    padding: 6% 15%;
+    text-align: center;
+    background: #2B2B2B;
+}
+
+#about, h1 p{
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;  
+}
+
+.row-about{
+    width: 96%;
+    margin: 0 auto;
+}
+
+#profile-img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+}
+
+.column{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.column-text{
+    text-align: center;
+    line-height: 1.2;
+}
+
+#download-button{
+    width: 50%;
+    border-radius: 14.3rem;
+    margin-top: 15px;
+}
+
+/* Projects Section */
+
+#projects{
+    /* background-image: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); */
+    background: #D4784C;
+    padding: 7% 20%;
+    color: #fff;
+    text-align: center;
+}
+
+.Carousel-item{
+    position: relative;
+    width: 100%;
+}
+
+.project-image{
+    display: absolute;
+    position: relative;
+    bottom: 70px;
+    width: 70%;
+    margin: 20px;
+}
+
+.project-description{
+    font-family: 18px 'opensans-bold', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.description-skills{
+    padding: 2px;
+    border: 3px solid;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Footer Section */
+
+footer{
+    position: relative;
+    text-align: center;
+    padding: 3% 10%;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    background: #2B2B2B;
+}
+
+.footer-social{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact{
+    display: relative;
+    width: 100%;
+    text-align: center;
+}
+
