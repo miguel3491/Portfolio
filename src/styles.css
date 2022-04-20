@@ -1,3 +1,31 @@
+@keyframes typing {
+    from{
+        width: 25%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+  @keyframes kenburns-bottom {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+              transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+              transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+    }
+  }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 html, body, div{
     margin: 0;
     padding: 0;
@@ -5,25 +33,31 @@ html, body, div{
     outline: 0;
     vertical-align: baseline; /* property sets vertical alignment of an inline, inline-block or table-cell box. */
     background: transparent;
+    scroll-behavior: smooth;
     
 }
 
 /* Header Section */
 header{
     position: relative;
-    height: 960px;
+    height: 1080px;
     width: 100%;
     text-align: center;
-    overflow: hidden;
-    /* background-image: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); */
+    overflow-x: hidden;
     background-image: url("https://images.unsplash.com/photo-1476820865390-c52aeebb9891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-animation: kenburns-bottom 1.7s ease-out 1 reverse both;
+    animation: kenburns-bottom 1.7s ease-out 1 reverse both;
 }
 
 a, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+h1,h2,h3{
+    font-family: 'Actor', sans-serif;
+    text-shadow: 2px 2px 3px #202020;
 }
 
 #nav-wrap{
@@ -36,37 +70,59 @@ a, a:focus, a:active {
     z-index: 100;
     color: #fff;
     position: relative;
-    padding: 0px 300px;
+    padding: 0px 400px;
     right: 0px;
     top: 0;
 }
 
 ul.navbar li{
-    padding: 8px 15px;
+    padding: 8px 80px;
     line-height: 32px;
     text-decoration: none !important;
     list-style: none;
     text-align: center;
 }
 
+.home-bar:hover{
+   color: #F14A16 !important;
+}
+
 #nav-icon{
     margin-bottom: 6px;
 }
 
-
+.Type-out{
+    overflow: hidden;
+    width: 0;
+    animation: typing 1.3s forwards;
+}
+.typing{
+    color: #fff;
+}
 .header-icon{
     position: relative;
     list-style: none; /* removes the dot for the list style */
-    transition: width 2s, height 2s, transform 2s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 .header-icon:hover{
-    transform: rotate(45deg);
-    color: black;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.2);
+    color: black !important;
 }
 .github:hover{
-    transform: rotate(-45deg);
-    color: black;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.2);
+    color: black !important;
 }
 
 header .home-banner{
@@ -74,8 +130,7 @@ header .home-banner{
     margin: 200px auto 12px auto;
     width: 27%;
     text-align: center;
-    color: #29343A; 
-    font-family: 'Actor', sans-serif;
+    color: #000; 
 }
 
 header .banner-text{
@@ -85,8 +140,8 @@ header .banner-text{
 header .banner-text h1 {
     font-weight: 500;
     line-height: 1;
-    font-family: 'ubuntu', sans-serif;
     font-size: 80px;
+    animation: typing 1.3s forwards;
 }
 
 ul.Social {
@@ -123,9 +178,16 @@ ul.Social {
     border-radius: 70%;
 }
 
+.footer-contact{
+    margin-top: 10px;
+    display: relative;
+    width: 100%;
+    text-align: center;
+}
+
 .column{
+    position: relative;
     width: 25%;
-    float: left;
     text-align: center;
 }
 
@@ -143,8 +205,10 @@ ul.Social {
 /* Projects Section */
 
 #projects{
-    /* background-image: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"); */
-    background: #D4784C;
+    /* background: #D4784C; */
+    background-color: #999999;
+    background-image: url("https://www.transparenttextures.com/patterns/office.png");
+    /* background-image: url("https://www.transparenttextures.com/patterns/shley-tree-2.png"); */
     padding: 7% 20%;
     color: #fff;
     text-align: center;
@@ -156,11 +220,26 @@ ul.Social {
 }
 
 .project-image{
-    display: absolute;
-    position: relative;
-    bottom: 70px;
-    width: 70%;
-    margin: 20px;
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    outline: none;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.project-image:hover, .project-image:focus{
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.Carousel-item img{
+    justify-content: center;
 }
 
 .project-description{
@@ -172,6 +251,7 @@ ul.Social {
 }
 
 .description-skills{
+    width: 12%;
     padding: 2px;
     border: 3px solid;
     color: #000;
@@ -181,29 +261,31 @@ ul.Social {
 /* Footer Section */
 
 footer{
-    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
     text-align: center;
-    padding: 3% 10%;
-    bottom: 0;
+    line-height: 2.3;
     color: #fff;
     width: 100%;
     background: #2B2B2B;
 }
-
+footer h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Rubik",sans-serif;
+}
 .footer-social{
     display: flex;
     justify-content: center;
-    
+    width: 85%;
+    gap: 30px;
 }
 
-.address{
-    display: flex;
-    justify-content: center;
+footer hr{
+    border-top-color:#bbb;
+    opacity:0.5;
 }
 
-.footer-contact{
-    display: relative;
-    width: 100%;
-    text-align: center;
-}
 

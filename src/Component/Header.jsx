@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import HomeIcon from '@mui/icons-material/Home';
@@ -8,6 +8,7 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 
 
 function Header(){
+
 
     return(
         <div>
@@ -26,12 +27,14 @@ function Header(){
             <div className="home-banner">
                 <div className="banner-text">
                     <h1>Miguel Cano</h1>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+                    <h2 className="Type-out"> I'm a 
+                    <span className="typing"> Software Engineer</span>
+                    </h2>
                     <hr></hr>
                     <ul className="Social">
-                        <a href = "https://www.linkedin.com/in/miguel-cano-36a428204/">
+                        <a href = "https://www.linkedin.com/in/miguel-cano-36a428204/" target="_blank" rel="noopener">
                         <li className="header-icon"><LinkedInIcon color="primary" fontSize = "large"/></li></a>
-                        <a href = "https://github.com/miguel3491/WebDev">
+                        <a href = "https://github.com/miguel3491" target="_blank" rel="noopener">
                         <li className="header-icon github"><GitHubIcon fontSize = "large"/></li></a>
                     </ul>
                 </div>
@@ -43,3 +46,4 @@ function Header(){
 export default Header;
 
 // https://react-resume-template.herokuapp.com/#home // Inspiration
+// https://carsalcedo.github.io/fcarreraportafolio/?fbclid=IwAR3Rj0lP_qGBaZk3bSehHDpAcSdIfAXIBmq66VFfo-X_l6-zIiAmAZ6wI1w#home // Inspiration
