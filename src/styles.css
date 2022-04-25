@@ -178,17 +178,9 @@ ul.Social {
     border-radius: 70%;
 }
 
-.footer-contact{
-    margin-top: 10px;
-    display: relative;
-    width: 100%;
-    text-align: center;
-}
-
 .column{
     position: relative;
     width: 25%;
-    text-align: center;
 }
 
 .column-text{
@@ -287,5 +279,75 @@ footer hr{
     border-top-color:#bbb;
     opacity:0.5;
 }
+
+@media only screen and (max-width: 600px){
+    header{
+        height: 910px;
+        background-position: center;
+    }
+    #nav-wrap{
+        width: 100%;
+        padding: 0 100px;
+    }
+
+    ul.navbar li{
+        position: relative;
+        right: 30px;
+        padding: 5px;
+        line-height: 32px;
+    }
+
+    ul.Social {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    header .home-banner{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        color: #000; 
+    }
+
+    /* About section */
+    #profile-img{
+        position: relative;
+        margin-left: 105px;
+        width: 150px;
+        height: 150px;
+        border-radius: 70%;
+    }
+
+    #download-button{
+        width: 60%;
+        border-radius: 14.3rem;
+        margin-top: 15px;
+    }
+    /* Projects Section */
+
+    .Carousel-item{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .project-image{
+        display: flex;
+        width: 80vh;
+    }
+
+    #title-project{
+        position: relative;
+
+    }
+    .description-skills{
+        width: 100%;
+        padding: 1px;
+        border: 3px solid;
+        color: #000;
+        background-color: #fff;
+    }
+}
+
 
 

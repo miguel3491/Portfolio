@@ -14,8 +14,9 @@ function Projects(){
       };
 
     return (
+        <div>
+            <h1 id = "title-project">My Projects</h1>
         <div className="Carousel-item">
-            <h1>My Projects</h1>
             <Carousel onSelect={handleSelect}>
                 <Carousel.Item interval = {1500}>  
                     <a href="https://quiet-springs-17282.herokuapp.com/" target="_blank" rel="noopener">
@@ -32,7 +33,7 @@ function Projects(){
                 </Carousel.Item>
 
                 <Carousel.Item interval = {1500}>
-                <a href="https://aqueous-hamlet-49695.herokuapp.com/" target="_blank" rel="noopener">
+                <a href="https://master.dnk3a24uu8f6l.amplifyapp.com/" target="_blank" rel="noopener">
                 <img className="project-image" src="https://i.ibb.co/RPmd1DX/E-commerce.png" alt="Image Two"/></a>
                     <Carousel.Caption>
                         <h3>E-commerce</h3>
@@ -46,7 +47,7 @@ function Projects(){
                 </Carousel.Item>
 
                 <Carousel.Item interval = {1500}>
-                <a href="https://infinite-crag-23744.herokuapp.com/" target="_blank" rel="noopener">
+                <a href="https://master.d1vw6i0didueqk.amplifyapp.com/" target="_blank" rel="noopener">
                 <img className="project-image" src="https://i.ibb.co/YpJBLnG/Notetext.png" alt="Image Three"/></a>
                     <Carousel.Caption>
                         <h3>NoteText</h3>
@@ -60,6 +61,7 @@ function Projects(){
                 </Carousel.Item>
             </Carousel>
         </div>
+    </div>
     )
 }
 
