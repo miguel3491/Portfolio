@@ -28,7 +28,7 @@ function Header(){
                 <div className="banner-text">
                     <h1>Miguel Cano</h1>
                     <h2 className="Type-out"> I'm a 
-                    <span className="typing"> IT Specialist</span>
+                    <span className="typing"> Front End Developer</span>
                     </h2>
                     <hr></hr>
                     <ul className="Social">
