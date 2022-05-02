@@ -15,7 +15,7 @@ function About(){
                     </Col>
                     <Col className="column-text" lg = "6">
                     <h1>About Me</h1>
-                    <p>As a recent graduate of the University of New York City College of Technology, I'm excited to pursue my career path as a Front End Developer. I am passionate about technology in general. And, I would like to be part of this new era of technology. </p>
+                    <p>As a recent graduate of the University of New York City College of Technology, I'm excited to pursue my career path as a IT Specialist. I am passionate about technology in general. And, I would like to be part of this new era of technology. </p>
                     <a href = "https://drive.google.com/file/d/1TS35sLe07OWF7P99Qysf4Ig4UM84_n5x/view?usp=sharing" target="_blank">
                     <Fab id = "download-button" color = "primary"><DownloadIcon/>Download Resume</Fab></a>
                     </Col>
